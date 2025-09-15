@@ -90,7 +90,10 @@ function ModalTrigger(props: Props) {
       <div
         tabIndex={0}
         role="button"
-        aria-label={intl.formatMessage({ id: 'store/modal-layout.modal-trigger.aria-label', defaultMessage: 'Open modal' }) }
+        aria-label={intl.formatMessage({
+          id: 'store/modal-layout.modal-trigger.aria-label',
+          defaultMessage: 'Open modal'
+        })}
         onKeyDown={handleKeyDown}
         onClick={handleModalOpen}
         className={`${handles.triggerContainer} bg-transparent pa0 bw0 dib`}
